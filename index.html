@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivon Skula</title>
+    <!---CSS Style Sheets-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  </head>
+  <body>
+    <section>
+      <header>
+        <a href="#" class="logo">Ivon Skula</a>
+        <div class="toggle" onclick="menuToggle();"></div>
+      </header>
+      <div class="glass"></div>
+      <video src="images/My_video.mp4" autoplay muted loop poster="images/Ivonit.png"></video>
+      <ul class="social">
+        <li style="--i:1"><a href="#">Facebook</a></li>
+        <li style="--i:2"><a href="#">Twitter</a></li>
+        <li style="--i:3"><a href="#">Instagram</a></li>
+        <li style="--i:4"><a href="#">LinkedIn</a></li>
+      </ul>
+      <ul class="navigation">
+        <li style="--i:1;"><a href="index.html">Home</a></li>
+        <li style="--i:2;"><a href="about.html">About</a></li>
+        <li style="--i:3;"><a href="work.html">Work</a></li>
+        <li style="--i:4;"><a href="gallery.html">About</a></li>
+        <li style="--i:5;"><a href="contact.html">Contact</a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function menuToggle(){
+        const toggleMenu = document.querySelector('.toggle');
+        const section = document.querySelector('section');
+        toggleMenu.classList.toggle('active');
+        section.classList.toggle('active');
+      }
+    </script>
+  </body>
+</html>
